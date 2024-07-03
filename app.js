@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(route);
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017", { useNewUrlParser: true })
+  .connect("mongodb://127.0.0.1:27017/cms-test", { useNewUrlParser: true })
   .then(() => {
     app.listen(3000, () => {
       console.log("starting at port 3000");
